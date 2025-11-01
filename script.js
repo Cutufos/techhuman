@@ -41,7 +41,7 @@ function showSection(section) {
 
   const contenido = {
     documentacion: `
-      <h2>Documentación</h2>
+      <h2>Listado de documentos</h2>
       <div class="documentacion-container">
         <div class="doc-card">
           <h3 class="doc-title">CONTRATO</h3>
