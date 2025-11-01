@@ -1100,7 +1100,7 @@ body.modal-open {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent;
   border: none;
   color: white;
   font-size: 2rem;
@@ -1112,7 +1112,8 @@ body.modal-open {
 }
 
 .carousel-close:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #ff7f32;
   transform: scale(1.1);
 }
 
@@ -1120,7 +1121,7 @@ body.modal-open {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent;
   border: none;
   color: white;
   font-size: 3rem;
@@ -1132,7 +1133,8 @@ body.modal-open {
 }
 
 .carousel-nav:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #ff7f32 ;
   transform: translateY(-50%) scale(1.1);
 }
 
