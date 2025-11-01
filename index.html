@@ -15,6 +15,9 @@
         <img src="logo_Tech_Human2.png" alt="Tech Human Logo" class="logo-icon">
         <h1 class="logo">Tech Human</h1>
       </div>
+      <button id="gestiones-btn" class="gestiones-btn">
+        <span class="material-icons">apps</span> Gestiones
+      </button>
       <button id="header-back-btn" class="header-back-btn hidden">
         <span class="material-icons">arrow_back</span> Volver
       </button>
@@ -22,111 +25,184 @@
   </header>
 
   <div class="layout-container">
-    <!-- Contenido principal -->
-    <main class="main-content">
-      <!-- Modal -->
-      <div class="modal" id="main-menu">
-        <div class="modal-header">
-          <h2>Todas las Gestiones</h2>
+    <!-- Main page cards -->
+    <div class="main-cards">
+      <div class="main-card">
+        <div class="card-image">
+          <span class="material-icons">business</span>
         </div>
-
-        <div class="modal-body">
-          <section class="section">
-            <h3><b>Mi Trabajo</b></h3>
-            <div class="grid">
-              <div class="card-item">
-                <button class="card" data-section="documentacion">
-                  <span class="material-icons">description</span>
-                </button>
-                <p>Documentación</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="cobros">
-                  <span class="material-icons">account_balance_wallet</span>
-                </button>
-                <p>Información de cobros</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="vacaciones">
-                  <span class="material-icons">flight_takeoff</span>
-                </button>
-                <p>Vacaciones</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="art">
-                  <span class="material-icons">edit</span>
-                </button>
-                <p>ART</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="obra-social">
-                  <span class="material-icons">local_hospital</span>
-                </button>
-                <p>Obra Social</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="licencias">
-                  <span class="material-icons">pause_circle</span>
-                </button>
-                <p>Licencias</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="certificado">
-                  <span class="material-icons">description</span>
-                </button>
-                <p>Solicita un Certificado de Trabajo</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="telegrama">
-                  <span class="material-icons">exit_to_app</span>
-                </button>
-                <p>Telegrama de Renuncia</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="grupo-familiar">
-                  <span class="material-icons">people</span>
-                </button>
-                <p>Grupo Familiar</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <h3><b>Mi Desarrollo</b></h3>
-            <div class="grid">
-              <div class="card-item">
-                <button class="card" data-section="desempeno">
-                  <span class="material-icons">list</span>
-                </button>
-                <p>Desempeño</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="oportunidades">
-                  <span class="material-icons">thumb_up</span>
-                </button>
-                <p>Oportunidades Laborales</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="referidos">
-                  <span class="material-icons">group</span>
-                </button>
-                <p>Referidos</p>
-              </div>
-              <div class="card-item">
-                <button class="card" data-section="historia">
-                  <span class="material-icons">list</span>
-                </button>
-                <p>Historia Laboral</p>
-              </div>
-            </div>
-          </section>
+        <h3>Nosotros</h3>
+        <div class="card-image">
+          <img src="presentacion.jpg" alt="Nosotros" class="card-img">
         </div>
+        <p>Aprende más sobre quiénes somos y nuestra misión</p>
+      </div>
 
-        <div class="modal-footer">
-          <p>Todos los derechos reservados para Tech Human</p>
+      <div class="main-card">
+        <div class="card-image">
+          <span class="material-icons">timeline</span>
+        </div>
+        <h3>Hitos</h3>
+        <div class="card-image">
+          <img src="hitos.jpg" alt="Hitos" class="card-img">
+        </div>
+        <p>Conoce los momentos más importantes de nuestra historia</p>
+      </div>
+
+      <div class="main-card">
+        <div class="card-image">
+          <span class="material-icons">account_tree</span>
+        </div>
+        <h3>Organigrama</h3>
+        <div class="card-image">
+          <img src="organigrama.jpg" alt="Organigrama" class="card-img">
+        </div>
+        <p>Descubre la estructura organizacional de Tech Human</p>
+      </div>
+
+      <div class="main-card">
+        <div class="card-image">
+          <span class="material-icons">star</span>
+        </div>
+        <h3>Beneficios</h3>
+        <div class="card-image">
+          <img src="beneficios.png" alt="Beneficios" class="card-img">
         </div>
       </div>
-    </main>
+
+      <div class="main-card">
+        <div class="card-image">
+          <span class="material-icons">volunteer_activism</span>
+        </div>
+        <h3>Acciones comunitarias</h3>
+        <div class="card-image">
+          <img src="acciones_comunitarias.jpg" alt="Acciones comunitarias" class="card-img">
+        </div>
+        <p>Conoce nuestras iniciativas sociales y comunitarias</p>
+      </div>
+    </div>
+
+    <!-- Modal Backdrop -->
+    <div class="modal-backdrop hidden" id="modal-backdrop"></div>
+
+    <!-- Modal -->
+    <div class="modal hidden" id="main-menu">
+      <div class="modal-header">
+        <h2>Todas las Gestiones</h2>
+        <button class="close-btn" id="close-modal-btn">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <section class="section">
+          <h3><b>Mi Trabajo</b></h3>
+          <div class="grid">
+            <div class="card-item">
+              <button class="card" data-section="documentacion">
+                <span class="material-icons">description</span>
+              </button>
+              <p>Documentación</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="cobros">
+                <span class="material-icons">account_balance_wallet</span>
+              </button>
+              <p>Información de cobros</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="vacaciones">
+                <span class="material-icons">flight_takeoff</span>
+              </button>
+              <p>Vacaciones</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="art">
+                <span class="material-icons">edit</span>
+              </button>
+              <p>ART</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="obra-social">
+                <span class="material-icons">local_hospital</span>
+              </button>
+              <p>Obra Social</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="licencias">
+                <span class="material-icons">pause_circle</span>
+              </button>
+              <p>Licencias</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="certificado">
+                <span class="material-icons">description</span>
+              </button>
+              <p>Solicita un Certificado de Trabajo</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="telegrama">
+                <span class="material-icons">exit_to_app</span>
+              </button>
+              <p>Telegrama de Renuncia</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="grupo-familiar">
+                <span class="material-icons">people</span>
+              </button>
+              <p>Grupo Familiar</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3><b>Mi Desarrollo</b></h3>
+          <div class="grid">
+            <div class="card-item">
+              <button class="card" data-section="desempeno">
+                <span class="material-icons">list</span>
+              </button>
+              <p>Desempeño</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="oportunidades">
+                <span class="material-icons">thumb_up</span>
+              </button>
+              <p>Oportunidades Laborales</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="referidos">
+                <span class="material-icons">group</span>
+              </button>
+              <p>Referidos</p>
+            </div>
+            <div class="card-item">
+              <button class="card" data-section="historia">
+                <span class="material-icons">list</span>
+              </button>
+              <p>Historia Laboral</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Carousel Modal -->
+  <div class="modal-backdrop hidden" id="card-carousel-backdrop"></div>
+  <div class="carousel-modal hidden" id="card-carousel-modal">
+    <button class="carousel-close" id="carousel-close-btn">
+      <span class="material-icons">close</span>
+    </button>
+    <button class="carousel-nav carousel-prev" id="carousel-prev-btn">
+      <span class="material-icons">chevron_left</span>
+    </button>
+    <div class="carousel-content" id="carousel-content">
+      <!-- Card content will be inserted here -->
+    </div>
+    <button class="carousel-nav carousel-next" id="carousel-next-btn">
+      <span class="material-icons">chevron_right</span>
+    </button>
   </div>
 
   <!-- Contenedor dinámico -->
